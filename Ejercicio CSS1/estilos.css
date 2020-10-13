@@ -1,0 +1,132 @@
+body{
+    margin: 0 auto;
+    font-size: 16px;
+    max-width: 1024px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background: #cfe2e7;
+    position: relative;
+}
+
+header nav{
+    background: #0070c5;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 99%;
+}
+
+header nav ul{
+    display: inline-block;
+}
+
+header nav ul li{
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+header nav ul li:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+header nav form{
+    float: left;
+    margin: 15px 20px 0 0;
+}
+
+#logo{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.boton-buscar{
+    background: green;
+    border-radius: 5px;
+    color: #ffffff;
+    border: 1px solid green;
+    height: 35px;
+}
+
+.buscador{
+    border-radius: 5px;
+    height: 35px;
+    width: 190px;
+}
+
+.section1{
+    margin-top: 10px;
+}
+
+.section1 article{
+    text-align: center;
+}
+
+.section1 article img{
+    border: 5px solid rgb(201, 196, 196);
+    width: 98%;
+    margin-top: 20px;
+}
+
+.section2 article{
+    display: inline-block;
+    width: 32%;
+    vertical-align: top;
+}
+
+.section2{
+    margin-top: 10px;
+}
+
+.section2 h1{
+    font-size: 60px;
+    margin: 10px auto 0;
+}
+
+.section2 h2{
+    font-size: 20px;
+    margin: 5px auto 0;
+}
+
+.section2 article{
+    display: inline-block;
+    width: 32%;
+    vertical-align: top;
+}
+
+.ver-mas{
+    color: blue;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 30%;
+    padding: 5px 10px;
+}
+
+.setion2 video{
+    width: 98%;
+    height: 250px;
+    padding: 10px;
+}
+
+footer {
+    background: blue;
+    color: white;
+    height: 100px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer section{
+    font-size: 30px;
+    display: inline-block;
+    width: 32%;
+    height: 90%;
+    background: rgb(6, 6, 58);
+    vertical-align: middle;
+    padding: 15px 0 0 10px;
+    border-radius: 5px;
+}

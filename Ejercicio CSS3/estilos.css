@@ -1,0 +1,41 @@
+body{
+    max-width: 1024px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+header {
+    background: black;
+}
+
+header nav{
+    display: inline-block;
+}
+
+header nav ul li{
+    color: #ffffff;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.buscar{
+    float: right;
+    width: 120px;
+    height: 30px;
+    margin: 10px 5px 0 0;
+    background: black;
+    border: 1px solid gray;
+    font-style: italic;
+    border-radius: 5px;
+}
+
+#logo{
+    width: 100px;
+}
+
+section{
+    background-image: url("img/bici.png");
+    height: 500px;
+    background-size: cover;
+}
+

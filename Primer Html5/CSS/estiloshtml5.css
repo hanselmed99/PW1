@@ -1,0 +1,40 @@
+body{
+    max-width: 1024px;
+}
+
+header{
+    /* Color de fondo */
+    background-color: blue;
+    /* Color de la letra */
+    color: white;
+    text-align: center;
+}
+
+header nav ul li{
+    background-color: cornsilk;
+    border-radius: 5px;
+    color: black;
+    width: 90px;
+    display: inline-block;
+    padding: 10px 0 10px 0;
+    margin: 10px;
+}
+
+header nav ul li:hover {
+    background-color: black;
+    color: white;
+}
+
+main{
+    border: 5px solid black;
+    padding: 20px;
+}
+
+footer{
+    background-color: brown;
+    margin: 20px;
+}
+
+.inicio{
+    margin-right: 50px;
+}

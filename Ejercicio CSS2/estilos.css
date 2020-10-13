@@ -1,0 +1,180 @@
+body{
+    margin: 0 auto;
+    max-width: 1024px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+header{
+    position: relative;
+}
+
+header nav{
+    width: 97%;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+header nav ul{
+    padding: 10px;
+}
+
+header nav ul li{
+    display:inline-block;
+    margin-right: 20px;
+}
+
+.barra{
+    background-image: linear-gradient(#e55300 5%, #fca66e 20%, #e55300 50%);
+    color: white;
+    font-size: 550;
+    border-radius: 8px;
+}
+
+.titulo{
+    color: white;
+    text-shadow: 1px 1px 1px grey, -1px -1px 1px grey;
+    font-size: 25px;
+    margin: 0;
+}
+
+.titulo-logo{
+    padding: 15px 25px 30px;
+}
+
+.logo-redes{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+.section1, .cont{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.section1{
+    width: 58%;
+    border-bottom: 1px solid gray;
+    border-width: 40%;
+}
+
+.section1 .secc2art2{
+    margin-left: 30px;
+}
+
+p{
+    margin-right: 50px;
+    padding-right: 50px;
+}
+
+.boton-leer{
+    border-radius: 10px;
+    font-style: italic;
+    border: 0 solid;
+    background: rgb(177, 177, 177);
+    color: white;
+    font-size: 15px;
+    height: 30px;
+}
+
+.section1 .secc1art1{
+    text-align: center;
+}
+
+.section1 .secc1art1 img{
+    width: 92%;
+}
+
+.cont{
+    width: 38%;
+}
+
+.secc1art2 h2{
+    color: grey;
+    font-weight: 900;
+}
+
+.img-post{
+    border: 10px solid #cccccc;
+}
+
+.secc2art2{
+    display: inline-block;
+}
+
+.section1 .secc2art2 div{
+    display: inline-block;
+    position: absolute;
+    width: 32%;
+    margin-left: 10px;
+    margin-right: 20%;
+    font-size: 14px;
+}
+
+.publicidad-aside{
+    text-align: center;
+    margin-top: 20px;
+    width: 81%;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.buscador-aside{
+    text-align: center;
+    margin-top: 30px;
+    width: 81%;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.categoria-aside{
+    text-align: center;
+    margin-top: 30px;
+    width: 81%;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.buscador{
+    border-radius: 20px;
+}
+
+.boton-buscar{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background: gray;
+    color: white;
+}
+
+.autor-post{
+    border: 1px solid rgb(206, 204, 204);
+    border-radius: 10px;
+    background: rgb(206, 204, 204);
+    border-width: 8px;
+}
+
+.italica-post{
+    font-style: italic;
+    color: white;
+}
+
+.lista-category li{
+    border-bottom: 1px dotted black;
+    text-align: left;
+    margin-top: 10px;
+    margin-right: 40px;
+    color: gray;
+}
+
+#form-buscador{
+    margin: 10px 45px 10px 45px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.cont-publicidad{
+    margin: 10px 0 10px 0;
+}

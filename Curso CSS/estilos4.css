@@ -1,0 +1,127 @@
+/*
+Pseudoelementos
+Se utilizan para dar estilo a partes especificas
+
+Ejemplos:
+:::first-letter - elementoss bloque
+::first-line - elemento bloque
+::before 
+::after
+::selection
+*/
+
+.titulo::first-letter{
+    color: red;
+    font-size: 50px;
+}
+
+.linea::first-letter{
+    color: red;
+    font-size: 50px;
+}
+
+.linea{
+    display: block;
+}
+
+.texto::first-line{
+    color: blue;
+}
+
+.texto::selection{
+    background: red;
+    color: white;   
+}
+
+/*::before y ::after
+La propiedad de content es obligatorio
+Son elementos de linea por defeto y son hijos del elementos
+al que pertenecen*/
+
+.dinero::before{
+    content: '$';
+    color: red;
+}
+
+.dinero::after{
+    content: '.00';
+    color: red;
+}
+
+.ejemplo::before, .ejemplo::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: black;
+    display: inline-block;
+}
+
+/*Pseudoclases
+
+    :link - link no visitado
+    :visited - link visitado
+    .activo - link al momento del click
+    */
+
+.enlace:link{
+    color: green;
+}
+
+.enlace:visited{
+    color: red;
+}
+
+.enlace:active{
+    transform: scale(.8);
+}
+
+.enlace{
+    display: inline-block;
+    padding: 5px;
+    background: red;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.enlace:hover{
+    background: black;
+}
+
+.input, .label{
+    display: block;
+}
+
+.input:enabled{
+    background: blue;
+}
+
+.input:disabled{
+    background: red;
+}
+
+.input:required{
+    background: yellow;
+}
+
+.input:checked + label{
+    font-size: 30px;
+}
+
+.input:in-range{
+    background: green;
+}
+
+.input:out-of-range{
+    background: red;
+}
+
+/*
+Child - 
+    :first-child
+    :last-child
+    :nth-child(n)
+    :nth-child(n)
+    :only-child
+/*
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale.1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form action="formulario.html">
+        <h1>texto</h1>
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="Nombre" type="text" placeholder="Ingrese su nombre completo" size="20" maxlength="20" autofocus>
+        
+        <h1>Radio</h1>
+        <fieldset>
+            <legend>Seleciona un genero:</legend>
+            <input type="radio" name="genero" value="Hombre">Hombre
+            <input type="radio" name="genero" value="Mujer">Mujer
+        </fieldset>
+
+        <h1>Select</h1>
+        <label for="">Frutas</label>
+        <select name="frutas" id="frutas">
+        <optgroup label="Favoritas">
+            <option value="fresa">Fresa</option>
+            <option value="manzana">Manzana</option>
+        </optgroup>
+        <optgroup label="Otros">
+            <option value="pera">Pera</option>
+        </optgroup>
+        </select>
+        
+        <h1>Textarea</h1>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Escibe algun comentario"></textarea>
+    
+        <h1>Datalist</h1>
+        <label for="">Buscador:</label>
+        <input list="buscador">
+        <datalist id="buscador">
+            <option value="google">Google</option>
+            <option value="bing">Bing</option>
+            <option value="opera">Opera</option>
+        </datalist>
+
+        <h1>Checkbox</h1>
+        <input type="checkbox" name="" id="">Azul
+        <input type="checkbox" name="" id="">Verde
+
+        <h1>Password</h1>
+        <label for="contraseña">Contraseñas</label>
+        <input type="password" name="contraseña" id="contraseña" required>
+
+        <h1>Color</h1>
+        <input type="color" name="" id="">
+
+        <h1>Fecha</h1>
+        <label for="date">Fecha</label>
+        <input type="date" name="date" id="date" min="2000-10-22">
+
+        <h1>Datetime</h1>
+        <label for="">Datetime</label>
+        <input type="datetime-local" name="" id="">
+
+        <h1>Time</h1>
+        <input type="time" name="" id="">
+
+        <h1>Week</h1>
+        <input type="week" name="" id="">
+
+        <h1>Correo</h1>
+        <input type="email" name="" id="">
+
+        <h1>Range</h1>
+        <input type="range" name="" id="" min="0" max="50" step="10">
+
+        <h1>Numero</h1>
+        <input type="number" name="" id="" min="1" max="25" step="4" required>
+
+        <h1>Search</h1>
+        <input type="search" name="" id="">
+
+        <h1>URL</h1>
+        <input type="url" name="" id="">
+
+        <h1>Archivos</h1>
+        <input type="file" multiple>
+
+        <h1>Telefono</h1>
+        <input type="tel" name="" id="" pattern="" maxlength="10">
+        <br>
+        <br>
+        <input type="submit" value="">
+        <input type="image" src="" alt="">
+    </form>
+</body>    
+</html>
