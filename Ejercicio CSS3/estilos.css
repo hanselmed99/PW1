@@ -2,6 +2,7 @@ body{
     max-width: 1024px;
     margin: 0 auto;
     font-size: 16px;
+    font-family: arial;
 }
 
 header {
@@ -16,6 +17,27 @@ header nav ul li{
     color: #ffffff;
     display: inline-block;
     margin-right: 20px;
+    font-size: 14px;
+}
+
+.footer{
+    background: #303130;
+    color: #ffffff;
+}
+
+.registro{
+    text-align: center;
+    padding: 40px 0 20px;
+}
+
+.registro h2{
+    margin: 0;
+}
+
+.registro p{
+    width: 500px;
+    display: inline-block;
+    color: silver;
 }
 
 .buscar{
@@ -29,6 +51,26 @@ header nav ul li{
     border-radius: 5px;
 }
 
+.seccion1{
+    position: relative;
+}
+
+.seccion1 div{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    width: 500px;
+    height: 158px;
+    margin: auto;
+}
+
+.redes img{
+    width: 30px;
+}
+
 #logo{
     width: 100px;
 }
@@ -39,3 +81,39 @@ section{
     background-size: cover;
 }
 
+.boton{
+    font-size: 12px;
+    background: #ffffff;
+    height: 30px;
+    width: 100px;
+    font-weight: 600;
+    border: none;
+}
+
+#titulo, #subtitulo{
+    font-weight: 700;
+    color: white;
+    margin: 0;
+}
+
+#titulo{
+    font-size: 35px;
+}
+
+#subtitulo{
+    font-size: 24px;
+    margin: 14px 0 20px;
+}
+
+#email{
+    background: inherit;
+    width: 400px;
+    height: 25px;
+    border: 1px solid #5e5f5f;
+    padding: 5px 10px;
+}
+
+#unirme{
+    height: 35px;
+    width: 100px;
+}
