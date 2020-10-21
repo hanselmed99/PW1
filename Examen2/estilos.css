@@ -1,0 +1,123 @@
+body{
+    max-width: 1024px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+header{
+    position: relative;
+}
+
+#slogan{
+    float: right;
+    margin: 50px 150px;
+    color: orange;
+    font-style: italic;
+    font-weight: 700;
+}
+
+header nav{
+    display: inline-block;
+    border: 1px solid rgb(222, 75, 138);
+    width: 97%;
+    margin: 0 auto;
+    text-align: center;
+    background: rgb(222, 75, 138);
+}
+
+header nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+#home{
+    color: rgb(189, 207, 100);
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 8%;
+    background: #ffffff;
+}
+
+#logo{
+    width: 10%;
+}
+
+#person{
+    width: 25%;
+    border: 3px solid orange;
+    border-radius: 150px;
+}
+
+.seccion1{
+    margin-top: 60px;
+    text-align: center;
+}
+
+.seccion1 article{
+    display: inline-block;
+    width: 45%;
+    text-align: center;
+}
+
+.secc1art1{
+    margin-left: 20px;
+}
+
+.secc1art1 h1{
+    color: rgb(81, 170, 232);
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.secc1art1 h3{
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.secc1art1 p{
+    color: rgb(184, 221, 233);
+    font-size: 12px;
+}
+
+#bottom{
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    background: rgb(182, 202, 82);
+    color: #ffffff;
+}
+
+footer{
+    background: rgb(222, 75, 138);
+    padding: 10px;
+    margin-top: 50px;
+}
+
+footer div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#div1{
+    color: #ffffff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#div1{
+    margin-left: 10px;
+}
+
+#div2{
+    margin-left: 490px;
+}
+
+#div1 p{
+    font-size: 12px;
+}
+
+#div2 img{
+    width: 13%;
+}
