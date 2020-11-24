@@ -40,6 +40,9 @@ function agregar(req, res) {
             return res.status(400).send({error: true, mensaje: "El nombre es obligatorio"});
         }
 
+        if(persona.telefono && persona.telefono.length !== 10) {
+            return res.status(400).send({error: true, mensaje: "El telefono solo es de 10 caracteres"});
+        }
         let sql = 'insert into personas set ?';
         connection.query(sql, [persona], (err, rows) => {
             if(err){
