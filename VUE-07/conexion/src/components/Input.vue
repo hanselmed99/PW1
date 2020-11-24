@@ -11,6 +11,7 @@
         :disabled="disabled"
         @input="$emit('input', $event.target.value)"
       >
+    <span v-if="error"></span>
   </div>
 </template>
 
@@ -44,6 +45,14 @@ export default {
         value: {
             type: [String, Number, Boolean],
             default: ''
+        },
+        mensajeError: {
+            type: String,
+            default: 'Campo obligatorio'
+        },
+        error: {
+            type: Boolean,
+            default: false
         }
     }
 }

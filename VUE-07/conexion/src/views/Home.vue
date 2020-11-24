@@ -21,8 +21,20 @@ export default {
       campos: [
         { key: 'id', label: 'Clave' },
         { key: 'nombre', label: 'Nombres' },
-        { key: 'direccion', label: 'Dirección' },
-        { key: 'telefono', label: 'Telefono' }
+        { 
+          key: 'direccion', 
+          label: 'Dirección', 
+          formatter: value =>{
+            return value.toUpperCase || "Campo vacío"
+          }
+        },
+        { 
+          key: 'telefono', 
+          label: 'Telefono',
+          formatter: value =>{
+            return value.toUpperCase || "Campo vacío"
+          } 
+        }
       ]
     }
   },

@@ -7,6 +7,9 @@
             label="Nombre" 
             placeholder="Ingrese Nombre de la persona"
             id="nombre"
+            class="mb-2"
+            :error="validacionNombre && !erroresValidacion"
+            mensajeError="El nombre es obligatorio"
           />
           <Input 
             v-model="persona.direccion"
@@ -44,22 +47,46 @@ export default {
                 nombre: '',
                 direccion: '',
                 telefono: ''
-            }
+            },
+            erroresValidacion: true
         }
     },
     methods: {
         ...mapActions(['crearPersona']),
         guardarPersona() {
-            console.log(this.persona);
-            this.crearPersona({
-                params: this.persona,
-                onComplete: (response) => {
-                    console.log(response);
-                    this.$router.push({
-                        name: 'Home'
-                    })
-                }
-            })
+            if(this.validacionNombre) {
+                this.erroresValidacion = false;
+                    console.log(this.persona);
+                    this.crearPersona({
+                    params: this.persona,
+                    onComplete: (response) => {
+                        console.log(response);
+                        this.$notify({
+                            type: 'success',
+                            title: response.data.mensaje
+                        });
+                        this.$router.push({
+                            name: 'Home'
+                        })
+                    },
+                    onError: () => {
+                        this.$notify({
+                            type: 'error',
+                            title: error.response.data.mensaje
+                        });
+                    }
+                }) 
+            } else {
+                this.erroresValidacion = true;
+            }
+        }
+    },
+    computed: {
+        validacionNombre() {
+            return(
+                this.persona.nombre !== undefined &&
+                this.persona.nombre.trim() !== ''
+            )
         }
     }
 }

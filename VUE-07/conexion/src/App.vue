@@ -4,6 +4,7 @@
       <router-link to="/" clas>Home</router-link> |
     </div>
     <router-view class="container mt-4"/>
+    <notifications position="bottom right"/>
   </div>
 </template>
 
